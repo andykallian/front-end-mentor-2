@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+
+/* ## Colors
+
+### Primary
+
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+### Neutral
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%) */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    Font-size: 17px;
+}
+
+
+.container{
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.card{
+    width: 320px;
+    background-color: hsl(216, 50%, 16%);
+    padding: 17px;
+    border-radius: 12px;
+    box-shadow: 13px 0px 27px 10px hsl(215, 54%, 12%);
+}
+
+.img{
+    position: relative;
+}
+
+.card .imgcard{
+    max-width: 100%;
+    border-radius: 10px;
+    position: relative;
+}
+
+.card .view{
+    max-width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    background-size: 100%;
+    transition: opacity .5s ease-in-out;
+    border-radius: 12px;
+   
+}
+
+.card .view:hover{
+    opacity: .4;
+}
+
+.card div{
+    margin-block: 10px;
+}
+
+
+.text h2, .text > p{
+    margin-block: 7px;
+}
+
+
+.text h2{
+    color: #fff;
+    font-size: 17px;
+    transition: color .5s ease-in-out;
+    cursor: pointer;
+}
+
+.text h2:hover{
+    color:hsl(178, 100%, 50%)
+}
+
+.text > p{
+    color: hsl(215, 51%, 70%);
+}
+
+.text-block{
+    display: flex;
+    justify-content: space-between;
+}
+
+.etherium, .time{
+    display: flex;
+    gap: 7px;
+}
+
+.etherium p{
+    color: hsl(178, 100%, 50%);
+}
+
+.time p{
+    color: hsl(215, 51%, 70%);
+}
+
+.line{
+    display: block;
+    width: 100%;
+    border: 1px solid hsl(215, 32%, 27%);
+}
+
+.creator{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+}
+
+.creator img{
+    width: 9%;
+    border-radius: 50%;
+}
+
+.creator p{
+    color: hsl(215, 51%, 70%);
+}
+
+.creator a{
+    color: white;
+    transition: color .5s ease-in-out;
+}
+
+.creator a:hover{
+    color:hsl(178, 100%, 50%)
+}
